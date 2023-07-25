@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="09_styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Merriweather+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!--Navigation Header -->
+    <header id="header">
+        <nav id="navbar">
+            <div id="logo">
+                <img src="logo.png" alt="The CheF's Wing.com">
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services-container">Services</a></li>
+                <li><a href="#about_us">About US</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="rightnav">
+                <input type="text" name="search" class="search" id="search" placeholder="search here">
+                <button class="btn btn-sm" onclick="alert('no items match your search')">search</button>
+            </div>
+        </nav>
+    </header>
+    <!--Home section -->
+    <section id="home">
+        <h1 class="h-primary ">The <span class="orangered">CH<span class="yellow">e</span>F</span>'s Wing</h1>
+        <p>Enter the world of the most fascinating and delicious food you ever have...<br>Still waiting? Witness now!</p>
+        <p class="center">If not fulfilled your trust, then</p>
+        <p></p><span class="pink"> <span class="darkpink">100%</span> cashback guarntee</span></p>
+        <button class="btn" onclick="alert('Thanks for choosing us... You will be redirected to another page soon...')">Order Now</button>
+    </section>
+    <!-- services section -->
+    <section class="services" id="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="1.png" alt="">
+                <h2 class="h-secondary center">Food Ordering </h2>
+                <p class="center">Usually when a hungry soul comes in to the restaurant, he/she has a short look on the menu and after the waiter come to take an order he says: Hamburger and that's it. Now-a-days, things are little different. You don't have to wait that much. Just one click and we are at your service sir!</p>
+                <button class="btn center">Order Fast</button>
+            </div>
+            <div class="box">
+                <img src="2.png" alt="">
+                <h2 class="h-secondary center">Food Catering </h2>
+                <p class="center">Catering is the business of providing food service at a remote site or a site such as a hotel, public house (pub), or other location. We offer a wide range of catering services, from drop-off to full-service catering, launch parties to weddings. Browse our sample menus for mouth-watering ideas for your next event.</p>
+                <button class="btn center">Cater Now</button>
+            </div>
+            <div class="box">
+                <img src="3.png" alt="">
+                <h2 class="h-secondary center">Bulk Ordering </h2>
+                <p class="center">Bulk foods are food items offered in large quantities, which can be purchased in large, bulk lots or transferred from a bulk container into a smaller container for purchase. We offer discounts on bulk orders depending on the product and the total invoice amount. Minimum value to be eligible for discounts is approximately Rupees 5,000.</p>
+                <button class="btn center">Book Now</button>
+            </div>
+        </div>
+        <hr>
+        <footer>
+            <div class="footer" id="contact">
+                <p>Made by RS</p>
+                <p>Thanks for showing us your love 💝</p>
+                <ul class="socials">
+                    <li><a href="#facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/rrs00179"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://github.com/RS-labhub"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/rohan-sharma-9386rs"><i class="fa fa-linkedin-square"></i></a></li>
+                    <li><a href="https://www.instagram.com/r_rohan__._"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+
+    </section>
+
+</body>
+
+</html>
