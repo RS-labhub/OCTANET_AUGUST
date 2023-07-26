@@ -1,0 +1,273 @@
+*{
+    padding:0;
+    margin: 0;
+}
+
+/* css varibles */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Header-Navigation Bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .5;
+    z-index: -1;
+
+}
+
+/* logo */
+#logo{
+    margin: 2px 3px;
+}
+
+/* logo image */
+#logo img{
+    height: 85px;
+
+}
+
+/* navbar list */
+#navbar ul{
+    display: flex;
+    list-style: none;
+   
+}
+
+
+/* Navbar list styling */
+#navbar ul li{
+    margin: 20px 13px;
+
+}
+
+/* Navbar list anchor tag styling */
+#navbar ul li a{
+    font-family: 'Baloo Bhai 2', cursive;
+    text-decoration: none;
+    font-size: 1.3rem;
+    border-radius: 20px;
+    display: block;
+    padding: 6px 6px;
+    color: white;
+
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:443px;
+    /* padding: 51px 100px ; */
+    font-family: 'Baloo Bhai 2', cursive;
+    color: white;
+    
+}
+
+#home::before{
+    content: "";
+    /* background:url('exploding-burger.jpg') no-repeat center center/cover; */
+    background-image: url(tray-with-burger-fries.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80%;
+    width: 100%;
+    opacity: .89;
+    z-index: -1;
+    
+}
+
+#home p{
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+
+.btn:hover{
+    background-color: rgb(146, 56, 23);
+    border: 2px solid orange;
+}
+
+.rightnav {
+    width: 50%;
+    text-align: right;
+    padding-right: 1.4rem;
+    margin-right: 8em;
+}
+
+.search {
+    border: 2px solid white;
+    border-radius: 10px;
+    outline: none;
+    padding: 0.1rem 0.3rem;
+    font-size: .9rem;
+    margin-bottom: 1.5em;
+}
+
+/* section services */
+
+.services {
+    /* background-color: rgb(177, 170, 170); */
+    background-color: rgb(177, 190, 200);
+}
+
+#services{
+    font-family: 'Merriweather Sans', sans-serif;
+    display: flex;
+    margin: 6px 28px;
+    background: url(exploding-burger.jpg);
+}
+
+#services .box{
+    border: 2px solid brown;
+    background-color: rgb(255 244 226);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin: 4px 4px;
+}
+#services .box img{
+    height: 100px;
+   
+    display: block;
+    margin: auto;
+}
+
+
+/* utility classes */
+.h-primary{
+    font-family: 'Baloo Bhai 2', cursive;
+    margin-top: 1em;
+    font-size: 2.5rem;
+    padding: 4px;
+    
+}
+.h-secondary{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.8rem;
+    padding: 8px;
+    
+}
+.btn{
+    padding: 2px 11px;
+    border: 2px solid brown;
+    border-radius: 32px;
+    margin-top: 12px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color:orange;
+    font-family: 'Baloo Bhai 2', cursive;
+    color: white;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orangered{
+    color: orangered;
+    font-size: 2em;
+}
+
+.yellow{
+    color: yellow;
+}
+
+.pink{
+    color: pink;
+    font-size: 2em;
+}
+
+.darkpink{
+    color: rgb(60, 4, 68);
+    font-size: 1.5em;
+}
+
+/* Footer */
+footer{
+	position: bottom;
+	background: rgb(61, 58, 58);
+    background-image: url(https://static.vecteezy.com/system/resources/previews/003/823/542/original/spices-for-use-as-cooking-ingredients-on-a-wooden-background-with-fresh-vegetables-healthy-food-herbs-organic-vegetables-on-the-table-raw-materials-of-cooking-preparation-tom-yum-free-photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+
+/*content*/
+.footer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.footer p{
+    margin-top: 1.2em;
+    margin-bottom: 1em; 
+    line-height: 8%;
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+ul{
+    justify-content: flex-end;
+}
+
+/*social -media*/
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color: dodgerblue;
+}
